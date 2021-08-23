@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
 const App = (props) => {
-  // const array = useState(10)
   const [count, setCount] = useState(props.count);
   const [text, setText] = useState('');
 
