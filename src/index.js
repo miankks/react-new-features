@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import Count from './components/Count';
+import Notes from './components/Notes'
 import NoteApp from './components/Notes';
 import reportWebVitals from './reportWebVitals';
 
@@ -8,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-  <NoteApp />
+  <Notes />
   </React.StrictMode>,
   document.getElementById('root')
   );
@@ -20,28 +22,6 @@ ReactDOM.render(
   
   // my work in commented form
   
-  // const App = (props) => {
-  //   const [count, setCount] = useState(props.count);
-  //   const [text, setText] = useState('');
-  
-  //   // useEffect is equal to componentDidMount and componentDidUpdate
-  //   useEffect(() => {
-  //     console.log('useEffect');
-  //     document.title = count;
-  //   })
-  //   const increment = () => {
-  //     setCount(count +1);
-  //   }
-  //   return (
-  //     <div>
-  //       <p>The current {text || 'count'} is {count}</p>
-  //       <button onClick={increment}>+1</button>
-  //       <button onClick={() => setCount(props.count)}>Reset</button>
-  //       <button onClick={() => setCount(count -1)}>-1</button>
-  //       <input value={text} onChange={(e) => setText(e.target.value)}/>
-  //     </div>
-  //   )
-  // }
 
 // const NoteApp = () => {
 
