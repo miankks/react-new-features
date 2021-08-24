@@ -1,76 +1,85 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import NoteApp from './components/Notes';
 import reportWebVitals from './reportWebVitals';
 
-const NoteApp = () => {
 
-  const [notes, setNotes] = useState([]);
-  const [title, setTitle] = useState('');
-  const [body, setBody] = useState('');
 
-  const addNote = (e) => {
-    e.preventDefault();
-    setNotes([
-      ...notes,
-      { title, body }
-    ])
-    setTitle('');
-    setBody('');
-  }
-
-  const removeNote = (title) => {
-    setNotes(notes.filter((note) => note.title !== title))
-  }
-
-  return (
-    <div>
-      <h1>Notes</h1>
-      {notes.map(note => ( 
-        <div key={note.title}>
-          <h3>{note.title}</h3>
-          <p>{note.body}</p>
-          <button onClick={() => removeNote(note.title)}>x</button>
-        </div>
-        )
-      )}
-      <p>Add note</p>
-      <form onSubmit={addNote}>
-        <input value={title} onChange={(e) => setTitle(e.target.value)}/>
-        <textarea value={body} onChange= {(e) => setBody(e.target.value)}></textarea>
-        <button>Add note</button>
-      </form>
-    </div>
-  )
-}
 
 ReactDOM.render(
   <React.StrictMode>
-    <NoteApp />
+  <NoteApp />
   </React.StrictMode>,
   document.getElementById('root')
-);
+  );
+  
+  // If you want to start measuring performance in your app, pass a function
+  // to log results (for example: reportWebVitals(console.log))
+  // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+  reportWebVitals();
+  
+  // my work in commented form
+  
+  // const App = (props) => {
+  //   const [count, setCount] = useState(props.count);
+  //   const [text, setText] = useState('');
+  
+  //   // useEffect is equal to componentDidMount and componentDidUpdate
+  //   useEffect(() => {
+  //     console.log('useEffect');
+  //     document.title = count;
+  //   })
+  //   const increment = () => {
+  //     setCount(count +1);
+  //   }
+  //   return (
+  //     <div>
+  //       <p>The current {text || 'count'} is {count}</p>
+  //       <button onClick={increment}>+1</button>
+  //       <button onClick={() => setCount(props.count)}>Reset</button>
+  //       <button onClick={() => setCount(count -1)}>-1</button>
+  //       <input value={text} onChange={(e) => setText(e.target.value)}/>
+  //     </div>
+  //   )
+  // }
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const NoteApp = () => {
 
-// my work in commented form
+//   const [notes, setNotes] = useState([]);
+//   const [title, setTitle] = useState('');
+//   const [body, setBody] = useState('');
 
-// const App = (props) => {
-//   const [count, setCount] = useState(props.count);
-//   const [text, setText] = useState('');
-
-//   const increment = () => {
-//     setCount(count +1);
+//   const addNote = (e) => {
+//     e.preventDefault();
+//     setNotes([
+//       ...notes,
+//       { title, body }
+//     ])
+//     setTitle('');
+//     setBody('');
 //   }
+
+//   const removeNote = (title) => {
+//     setNotes(notes.filter((note) => note.title !== title))
+//   }
+
 //   return (
 //     <div>
-//       <p>The current {text || 'count'} is {count}</p>
-//       <button onClick={increment}>+1</button>
-//       <button onClick={() => setCount(props.count)}>Reset</button>
-//       <button onClick={() => setCount(count -1)}>-1</button>
-//       <input value={text} onChange={(e) => setText(e.target.value)}/>
+//       <h1>Notes</h1>
+//       {notes.map(note => ( 
+//         <div key={note.title}>
+//           <h3>{note.title}</h3>
+//           <p>{note.body}</p>
+//           <button onClick={() => removeNote(note.title)}>x</button>
+//         </div>
+//         )
+//       )}
+//       <p>Add note</p>
+//       <form onSubmit={addNote}>
+//         <input value={title} onChange={(e) => setTitle(e.target.value)}/>
+//         <textarea value={body} onChange= {(e) => setBody(e.target.value)}></textarea>
+//         <button>Add note</button>
+//       </form>
 //     </div>
 //   )
 // }
