@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Count from './components/Count';
 import Notes from './components/Notes'
 import NoteApp from './components/Notes';
+import UseReducer from './components/UseReducer';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -10,7 +11,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Notes />
+  <UseReducer />
   </React.StrictMode>,
   document.getElementById('root')
   );
