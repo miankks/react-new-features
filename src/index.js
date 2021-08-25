@@ -5,6 +5,7 @@ import Notes from './components/Notes'
 import NoteApp from './components/Notes';
 import UseReducer from './components/UseReducer';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 
