@@ -9,15 +9,16 @@ import ReactDOM from 'react-dom';
 // import TextAlignmntDisplay from './components/bootstrap/TextAlignmntDisplay';
 // import FloatFixedPosition from './components/bootstrap/FloatFixedPosition';
 // import ColorBackground from './components/bootstrap/ColorBackground';
+// import MarginPadding from './components/bootstrap/MarginPadding';
 import reportWebVitals from './reportWebVitals';
-import MarginPadding from './components/bootstrap/MarginPadding';
+import SizingBorders from './components/bootstrap/SizingBorders';
 
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-  <MarginPadding />
+  <SizingBorders />
   </React.StrictMode>,
   document.getElementById('root')
   );
