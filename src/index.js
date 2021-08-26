@@ -1,18 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Count from './components/Count';
-import Notes from './components/Notes'
-import NoteApp from './components/Notes';
-import UseReducer from './components/UseReducer';
+// import Count from './components/Count';
+// import Notes from './components/Notes'
+// import NoteApp from './components/Notes';
+// import UseReducer from './components/UseReducer';
+// import TypoGraphy from './components/bootstrap/TypoGraphy';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import TextAlignmntDisplay from './components/bootstrap/TextAlignmntDisplay';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.css';
+import FloatFixedPosition from './components/bootstrap/FloatFixedPosition';
 
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-  <UseReducer />
+  <FloatFixedPosition />
   </React.StrictMode>,
   document.getElementById('root')
   );
