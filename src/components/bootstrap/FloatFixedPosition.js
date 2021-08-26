@@ -11,50 +11,50 @@ export default class FloatFixedPosition extends Component {
                 <h5>FLOATS</h5>
                 <div className="float-left">Float left</div>
                 <br />
-                <div>Float right</div>
+                <div className="float-right">Float right</div>
                 <br />
-                <div>Float none</div>
+                <div className="float-none">Float none</div>
                 <br />
         
                 <h5>RESPONSIVE FLOATS</h5>
-                <div>Float right on small or wider</div>
+                <div className="float-sm-right">Float right on small or wider</div>
                 <br />
-                <div>Float right on medium or wider</div>
+                <div className="float-md-right">Float right on medium or wider</div>
                 <br />
-                <div>Float right on large or wider</div>
+                <div className="float-lg-right">Float right on large or wider</div>
                 <br />
-                <div>Float right on extra large or wider</div>
-                <br />
-        
-                <div>Float left on small or wider</div>
-                <br />
-                <div>Float left on medium or wider</div>
-                <br />
-                <div>Float left on large or wider</div>
-                <br />
-                <div>Float left on extra large or wider</div>
+                <div className="float-xl-right">Float right on extra large or wider</div>
                 <br />
         
-                <div>Float none on small or wider</div>
+                <div className="float-sm-left">Float left on small or wider</div>
                 <br />
-                <div>Float none on medium or wider</div>
+                <div className="float-md-left">Float left on medium or wider</div>
                 <br />
-                <div>Float none on large or wider</div>
+                <div className="float-lg-left">Float left on large or wider</div>
                 <br />
-                <div>Float none on extra large or wider</div>
+                <div className="float-xl-left">Float left on extra large or wider</div>
+                <br />
+        
+                <div className="float-sm-one">Float none on small or wider</div>
+                <br />
+                <div className="float-md-one">Float none on medium or wider</div>
+                <br />
+                <div className="float-lg-one">Float none on large or wider</div>
+                <br />
+                <div className="float-xl-one">Float none on extra large or wider</div>
                 <br />
         
                 <br />
                 <br />
         
                 <h5>CLEARFIX</h5>
-                <div>
-                    <button>Float Left</button>
-                    <button>Float Right</button>
+                <div className="bg-success clearfix">
+                    <button className="float-left">Float Left</button>
+                    <button className="float-right">Float Right</button>
                 </div>
         
                 <h5>FIXED TOP</h5>
-                <h3>Fixed Top</h3>
+                <h3 className="fixed-top">Fixed Top</h3>
         
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias, voluptates molestiae
                     aperiam sit dicta a assumenda nesciunt quos adipisci reprehenderit animi ipsum unde quasi nobis veniam, modi.
@@ -67,7 +67,7 @@ export default class FloatFixedPosition extends Component {
                     porro fugiat magni inventore neque. </p>
         
                 <h5>FIXED STICKY</h5>
-                <h3>Sticky</h3>
+                <h3 className="sticky-top">Sticky</h3>
         
                 <p>Est molestias sunt quae quibusdam sequi odit, iusto expedita tempore aspernatur ipsum, necessitatibus rerum debitis,
                     harum, voluptatibus dolorem. Reprehenderit ex aperiam tempore. Cumque ut iste ullam non pariatur, qui architecto,
@@ -97,10 +97,10 @@ export default class FloatFixedPosition extends Component {
                     voluptates velit hic, tenetur cupiditate ab. Hic, unde!</p>
         
                 <h5>FIXED BOTTOM</h5>
-                <h3>Fixed Bottom</h3>
+                <h3 className="fixed-bottom">Fixed Bottom</h3>
         
             </div>
-            <h5>./Container</h5>
+            <h5>Container</h5>
             <div style={{marginTop:"500px"}}></div>
             </div>
         )
