@@ -8,15 +8,16 @@ import ReactDOM from 'react-dom';
 // import 'bootstrap/dist/css/bootstrap.css';
 // import TextAlignmntDisplay from './components/bootstrap/TextAlignmntDisplay';
 // import FloatFixedPosition from './components/bootstrap/FloatFixedPosition';
+// import ColorBackground from './components/bootstrap/ColorBackground';
 import reportWebVitals from './reportWebVitals';
-import ColorBackground from './components/bootstrap/ColorBackground';
+import MarginPadding from './components/bootstrap/MarginPadding';
 
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-  <ColorBackground />
+  <MarginPadding />
   </React.StrictMode>,
   document.getElementById('root')
   );
