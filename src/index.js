@@ -7,15 +7,16 @@ import ReactDOM from 'react-dom';
 // import TypoGraphy from './components/bootstrap/TypoGraphy';
 // import 'bootstrap/dist/css/bootstrap.css';
 // import TextAlignmntDisplay from './components/bootstrap/TextAlignmntDisplay';
+// import FloatFixedPosition from './components/bootstrap/FloatFixedPosition';
 import reportWebVitals from './reportWebVitals';
-import FloatFixedPosition from './components/bootstrap/FloatFixedPosition';
+import ColorBackground from './components/bootstrap/ColorBackground';
 
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-  <FloatFixedPosition />
+  <ColorBackground />
   </React.StrictMode>,
   document.getElementById('root')
   );
