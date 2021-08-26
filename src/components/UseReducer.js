@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useReducer } from 'react';
-import { Container, Row, Col } from 'reactstrap';
 
 const notesReducer = (state, action) => {
     switch (action.type) {
@@ -53,7 +52,6 @@ const UseReducer = () => {
   useEffect(() => {
       localStorage.setItem('notes', JSON.stringify(notes))
   }, [notes])
-  const Box = props => <div className="box">{props.children} </div>;
   return (
     <div>
       <h1>Notes</h1>
@@ -67,70 +65,6 @@ const UseReducer = () => {
         <textarea value={body} onChange= {(e) => setBody(e.target.value)}></textarea>
         <button>Add note</button>
       </form>
-      <Container>
-          <Row>
-            <Col>
-              col
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="4">
-             col 4
-            </Col>
-
-            <Col xs="4">
-              col4
-            </Col>
-          </Row>
-
-          <Row>
-            <Col xs="6">
-             col 6
-            </Col>
-
-            <Col xs="6">
-              col 6
-            </Col>
-            <Col xs="6">
-              col 6
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Box>.col </Box>
-            </Col>
-            <Col>
-              <Box>.col </Box>
-            </Col>
-            <Col>
-              <Box> .col </Box>
-            </Col>
-            <Col>
-              <Box>.col </Box>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="3">
-              <Box> .col-3 </Box>
-            </Col>
-            <Col xs="auto">
-              <Box>.col-auto is used for dynamic content</Box>
-            </Col>
-            <Col xs="3">
-              <Box> .col-3 </Box>
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={{ size: 4, order: 4, offset: 2 }}>
-              <Box> .col-sm-4 .col-sm-order-4 .col-sm-offset-4 </Box>{" "}
-            </Col>
-          </Row>
-          <Row>
-            <Col sm="12" md={{ size: 6, offset: 3 }}>
-              <Box> .col-sm-10 .col-md-4 .col-md-offset-5 </Box>
-            </Col>
-          </Row>
-        </Container>
     </div>
   )
 }
